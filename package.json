@@ -1,0 +1,11 @@
+{
+  "name": "nexis-url-guard",
+  "version": "0.0.1",
+  "description": "",
+  "main": "nexis.js",
+  "scripts": {
+    "test": "node nexis.js"
+  },
+  "author": "nexis",
+  "license": "ISC"
+}
