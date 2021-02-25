@@ -10,7 +10,7 @@ let ayarlar = {
 
 client.on('guildUpdate', async (nexis, aksoy) => {
     if (nexis.vanityURLCode === aksoy.vanityURLCode) return;
-    let entry = await gokce.fetchAuditLogs({
+    let entry = await aksoy.fetchAuditLogs({
         type: 'GUILD_UPDATE'
     }).then(audit => audit.entries.first());
     if (!entry.executor || entry.executor.id === client.user.id) return;
