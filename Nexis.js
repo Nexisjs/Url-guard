@@ -5,7 +5,7 @@ const request = require('request');
 let ayarlar = {
     "özelurl": "url değişince yapılcak url",
     "urlog": "botun mesaj atacağı guard log id",
-    "token": "botunuzun tokeni" // Nexis.#0001
+    "token": "botunuzun tokeni"///Nexis.#0001
 }
 
 client.on('guildUpdate', async (nexis, aksoy) => {
