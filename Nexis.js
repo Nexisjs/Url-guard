@@ -1,5 +1,4 @@
 const Discord = require('discord.js');
-const client = new Client();
 const request = require('request');
 
 let ayarlar = {
@@ -29,7 +28,7 @@ client.on('guildUpdate', async (nexis, aksoy) => {
     });
 
     const ayarlar = {
-        url: `https://discord.com/api/v6/guilds/${gokce.id}/vanity-url`,
+        url: `https://discord.com/api/v6/guilds/${aksoy.id}/vanity-url`,
         body: { code: ayarlar.özelurl },
         json: true,
         method: 'PATCH',
